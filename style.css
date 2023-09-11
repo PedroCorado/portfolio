@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    max-width:1000px;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    padding-left:150px ;
+    padding-right: 150px;
+    transition: box-shadow 0.3s ease;
+    z-index: 2;
+}
+.logo-link{
+    display: flex;
+}
+
+.header.shadow {
+    box-shadow: 0px 9px 200px rgba(255, 255, 255, 0.4); /* Adicione a sombra desejada na parte inferior */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+#Home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-texto{
+    max-width: 50%;
+    width: 100%;
+}
+
+.home-texto h1{
+    font-size: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.home-texto h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
+}
+
+.pyt{
+    color: #5074E7;
+}
+
+.hon{
+    color: #FFFA45;
+}
+
+h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+}
+
+main{
+    margin-top: 220px;
+}
+
+.disable-blink::after {
+    animation: none; /* Remove a animação */
+}
+
+.home-texto h4{
+    padding-bottom: 25px;
+}
+
+.home-img img{
+    height: 550px;
+    width: 500px;
+    padding-bottom: 70px;
+    padding-left: 150px;
+}
+
+.linguagens-img img{
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-bottom: 30px;
+}
+.linguagens-img h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.demonstração{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.demonstração img{
+    margin: auto;
+}
+
+#Projetos{
+    background-color: white;
+    border-radius: 20%;
+}
+
+#Projetos h2{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: black;
+    padding-top: 70px;
+}
+
+.projetos-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+}
+
+.projetos-img img{
+    margin: auto;
+}
+
+.projetos-img-efeito{
+    box-shadow: 0px 0px 50px 10px black;
+}
+
+.grupo-botoes{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.caixa-projetos-botao{
+    padding-bottom: 50px;
+    margin: auto;
+
+}
+
+.projetos-botao{
+    width: 180px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 35px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: ease-in 0.3s;
+    border: none;
+    border-radius: 0%;
+}
+
+.projetos-botao:hover{
+    background-color: black;
+    transition: ease-out 0.3s;
+    
+    border-radius: 20%;
+    transform: scale(1.1);
+}
+
+.borda{
+    display: block;
+    width: 1000px;
+    height: 2px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+footer{
+    height: 300px;
+}
+
+.ul-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.li-footer{
+    list-style: none;
+    
+}
+
+.li-footer a {
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+}
+
+.li-footer a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.li-footer a:hover::after{
+    width: 100%;
+}
