@@ -16,7 +16,7 @@ body{
 
 .container{
     margin: 0 auto;
-    max-width:1000px;
+    max-width:900px;
     width: 100%;
 }
 
@@ -29,8 +29,8 @@ body{
     height: 100px;
     background-color: black;
     width: 100%;
-    padding-left:150px ;
-    padding-right: 150px;
+    padding-left:30px ;
+    padding-right: 60px;
     transition: box-shadow 0.3s ease;
     z-index: 2;
 }
@@ -104,13 +104,13 @@ nav ul li a:hover::after{
     
 }
 
-.pyt{
-    color: #5074E7;
+.python-letra{
+    background-image: linear-gradient(to right, #5074E7, #FFFA45);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
 
-.hon{
-    color: #FFFA45;
-}
 
 h1::after {
     content: '|';
@@ -148,12 +148,14 @@ main{
     padding-left: 150px;
 }
 
-.linguagens-img img{
-    margin-top: 30px;
-    margin-left: 250px;
-    margin-bottom: 30px;
+
+.linguagens-img{
+    display: flex;
+    justify-content: center;
 }
-.linguagens-img h2{
+
+
+.linguagens-txt h2{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -213,8 +215,8 @@ main{
 }
 
 .projetos-botao{
-    width: 180px;
-    height: 100px;
+    width: 120px;
+    height: 70px;
     margin-right: 20px;
     margin-left: 20px;
     font-size: 35px;
@@ -235,7 +237,7 @@ main{
 
 .borda{
     display: block;
-    width: 1000px;
+    max-width: 1000px;
     height: 2px;
     background-color: gray;
     margin: auto;
@@ -251,6 +253,8 @@ footer{
     display: flex;
     justify-content: space-between;
     padding-top: 150px;
+    
+    width: 100%;
 }
 
 .li-footer{
@@ -277,4 +281,234 @@ footer{
 
 .li-footer a:hover::after{
     width: 100%;
+}
+
+
+@media (min-width:768px) and (max-width:1023px){
+    .header{
+        position: relative;
+        padding-left: 0px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    .header img{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 60px;
+    }
+    
+    nav ul{
+        display: flex;
+        gap: 30px;
+        
+    }
+
+    .container{
+        margin: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width:768px;
+        width: 100%;
+        margin: auto;
+    }
+
+    main{
+        width: 615px;
+        margin-top: 50px;
+    }
+
+    .home-texto h1{
+        font-size: 60px;
+        margin-left: 30px;
+    }
+
+    .home-texto h4{
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .home-img img{
+        height: 550px;
+        width: 550px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        margin-right: 0px;
+    }
+
+    .linguagens-img img{
+        max-width: 500px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .home-texto h3,.home-texto h2{
+        margin-left: 20px;
+    }
+
+    .linguagens-txt h2{
+        margin-left: 70px;
+    }
+
+    .demonstração{
+        margin-left: 90px;
+    }
+    
+    .projetos-img img{
+        width: 250px;
+    }
+    
+    .projetos-botao{
+        max-width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .borda{
+        width: 550px;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .li-footer{
+        
+    }
+
+    .li-footer a{
+        font-size: 20px;
+    }
+
+    .ul-footer{
+        padding-right: 30px;
+    }
+
+    #Footer{
+        height: 250px;
+        width: 615px;
+        margin: auto;
+    }
+
+}
+
+
+
+@media (max-width:767px) {
+    .header{
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+    }
+
+    
+
+    .header img{
+        padding-left: 0px;
+    }
+
+    nav{
+        margin-left: 60px;
+    }
+    
+    nav ul{
+        display: flex;
+        gap: 30px;
+        
+    }
+
+    .container{
+        margin: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width:600px;
+        width: 100%;
+    }
+
+    main{
+        margin-top: 50px;
+    }
+
+    .home-texto h1{
+        font-size: 60px;
+        margin-left: 30px;
+    }
+
+    .home-texto h4{
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+
+    .home-img img{
+        height: 550px;
+        width: 550px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        margin-right: 0px;
+    }
+
+    .linguagens-img img{
+        max-width: 500px;
+        margin-top: 30px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    .home-texto h3,.home-texto h2{
+        margin-left: 20px;
+    }
+
+    .linguagens-txt h2{
+        margin-left: 70px;
+    }
+
+    .demonstração{
+        margin-left: 90px;
+    }
+    
+    .projetos-img img{
+        width: 250px;
+    }
+    
+    .projetos-botao{
+        max-width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .borda{
+        margin-left: 120px;
+    }
+
+    .li-footer{
+        margin-left: 85px;
+    }
+
+    .li-footer a{
+        font-size: 20px;
+    }
+
+    .ul-footer{
+        padding-top: 80px;
+
+    }
+
+    #Footer{
+        height: 250px;
+    }
+
 }
